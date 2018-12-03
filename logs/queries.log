@@ -1,0 +1,454 @@
+2018-12-02 12:23:29 Debug: duration=31 rows=5 SHOW TABLES FROM `bunny`
+2018-12-02 12:24:30 Debug: duration=1 rows=5 SHOW TABLES FROM `bunny`
+2018-12-02 12:24:31 Debug: duration=42 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:24:31 Debug: duration=1 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:24:31 Debug: duration=21 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:24:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:24:31 Debug: duration=29 rows=2 SHOW FULL COLUMNS FROM `profile_category`
+2018-12-02 12:24:31 Debug: duration=0 rows=1 SHOW INDEXES FROM `profile_category`
+2018-12-02 12:24:31 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'profile_category' AND rc.TABLE_NAME = 'profile_category'
+2018-12-02 12:24:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'profile_category'
+2018-12-02 12:24:31 Debug: duration=11 rows=4 SHOW FULL COLUMNS FROM `services_config`
+2018-12-02 12:24:31 Debug: duration=0 rows=1 SHOW INDEXES FROM `services_config`
+2018-12-02 12:24:31 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_config' AND rc.TABLE_NAME = 'services_config'
+2018-12-02 12:24:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_config'
+2018-12-02 12:24:31 Debug: duration=10 rows=6 SHOW FULL COLUMNS FROM `services_log`
+2018-12-02 12:24:31 Debug: duration=0 rows=3 SHOW INDEXES FROM `services_log`
+2018-12-02 12:24:31 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_log' AND rc.TABLE_NAME = 'services_log'
+2018-12-02 12:24:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_log'
+2018-12-02 12:24:31 Debug: duration=10 rows=7 SHOW FULL COLUMNS FROM `user_profile`
+2018-12-02 12:24:31 Debug: duration=0 rows=4 SHOW INDEXES FROM `user_profile`
+2018-12-02 12:24:31 Debug: duration=1 rows=3 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user_profile' AND rc.TABLE_NAME = 'user_profile'
+2018-12-02 12:24:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user_profile'
+2018-12-02 12:24:33 Debug: duration=21 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:24:34 Debug: duration=0 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:24:34 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:24:34 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:42:31 Debug: duration=25 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:42:31 Debug: duration=0 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:42:31 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:42:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:42:31 Debug: duration=0 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 12:42:31 Debug: duration=20 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 12:42:44 Debug: duration=1 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 12:42:44 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 12:45:55 Debug: duration=1 rows=5 SHOW TABLES FROM `bunny`
+2018-12-02 12:45:55 Debug: duration=14 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:45:55 Debug: duration=0 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:45:55 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:45:55 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:45:55 Debug: duration=11 rows=2 SHOW FULL COLUMNS FROM `profile_category`
+2018-12-02 12:45:55 Debug: duration=0 rows=1 SHOW INDEXES FROM `profile_category`
+2018-12-02 12:45:55 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'profile_category' AND rc.TABLE_NAME = 'profile_category'
+2018-12-02 12:45:55 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'profile_category'
+2018-12-02 12:45:55 Debug: duration=11 rows=4 SHOW FULL COLUMNS FROM `services_config`
+2018-12-02 12:45:55 Debug: duration=0 rows=1 SHOW INDEXES FROM `services_config`
+2018-12-02 12:45:55 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_config' AND rc.TABLE_NAME = 'services_config'
+2018-12-02 12:45:55 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_config'
+2018-12-02 12:45:55 Debug: duration=8 rows=6 SHOW FULL COLUMNS FROM `services_log`
+2018-12-02 12:45:55 Debug: duration=0 rows=3 SHOW INDEXES FROM `services_log`
+2018-12-02 12:45:55 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_log' AND rc.TABLE_NAME = 'services_log'
+2018-12-02 12:45:55 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_log'
+2018-12-02 12:45:55 Debug: duration=11 rows=7 SHOW FULL COLUMNS FROM `user_profile`
+2018-12-02 12:45:55 Debug: duration=1 rows=4 SHOW INDEXES FROM `user_profile`
+2018-12-02 12:45:55 Debug: duration=1 rows=3 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user_profile' AND rc.TABLE_NAME = 'user_profile'
+2018-12-02 12:45:55 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user_profile'
+2018-12-02 12:46:04 Debug: duration=67 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:46:04 Debug: duration=1 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:46:04 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:46:04 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:46:15 Debug: duration=20 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:46:15 Debug: duration=1 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:46:15 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:46:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:46:15 Debug: duration=0 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 12:46:15 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 12:52:59 Debug: duration=215 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:52:59 Debug: duration=1 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:52:59 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:52:59 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:52:59 Debug: duration=0 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 12:52:59 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 12:53:59 Debug: duration=1 rows=5 SHOW TABLES FROM `bunny`
+2018-12-02 12:54:01 Debug: duration=2214 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:54:01 Debug: duration=1 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:54:01 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:54:01 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:54:01 Debug: duration=42 rows=2 SHOW FULL COLUMNS FROM `profile_category`
+2018-12-02 12:54:01 Debug: duration=1 rows=1 SHOW INDEXES FROM `profile_category`
+2018-12-02 12:54:01 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'profile_category' AND rc.TABLE_NAME = 'profile_category'
+2018-12-02 12:54:01 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'profile_category'
+2018-12-02 12:54:01 Debug: duration=15 rows=4 SHOW FULL COLUMNS FROM `services_config`
+2018-12-02 12:54:01 Debug: duration=0 rows=1 SHOW INDEXES FROM `services_config`
+2018-12-02 12:54:01 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_config' AND rc.TABLE_NAME = 'services_config'
+2018-12-02 12:54:02 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_config'
+2018-12-02 12:54:02 Debug: duration=16 rows=6 SHOW FULL COLUMNS FROM `services_log`
+2018-12-02 12:54:02 Debug: duration=0 rows=3 SHOW INDEXES FROM `services_log`
+2018-12-02 12:54:02 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_log' AND rc.TABLE_NAME = 'services_log'
+2018-12-02 12:54:02 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_log'
+2018-12-02 12:54:02 Debug: duration=10 rows=7 SHOW FULL COLUMNS FROM `user_profile`
+2018-12-02 12:54:02 Debug: duration=1 rows=4 SHOW INDEXES FROM `user_profile`
+2018-12-02 12:54:02 Debug: duration=1 rows=3 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user_profile' AND rc.TABLE_NAME = 'user_profile'
+2018-12-02 12:54:02 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user_profile'
+2018-12-02 12:54:04 Debug: duration=18 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:54:04 Debug: duration=1 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:54:04 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:54:04 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:54:13 Debug: duration=1 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 12:54:13 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 12:57:24 Debug: duration=14 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 12:57:24 Debug: duration=0 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 12:57:24 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 12:57:24 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 12:57:24 Debug: duration=0 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 12:57:24 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 12:57:30 Debug: duration=1 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 12:57:30 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 12:57:45 Debug: duration=1 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 12:57:45 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 12:59:07 Debug: duration=1 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 12:59:07 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 13:00:13 Debug: duration=19 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 13:00:13 Debug: duration=0 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 13:00:13 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 13:00:13 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 13:00:13 Debug: duration=0 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 13:00:13 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 13:01:05 Debug: duration=2 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 13:01:05 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 13:01:31 Debug: duration=1 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 13:01:31 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 13:01:49 Debug: duration=1 rows=5 SHOW TABLES FROM `bunny`
+2018-12-02 13:01:49 Debug: duration=13 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 13:01:49 Debug: duration=1 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 13:01:49 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 13:01:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 13:01:49 Debug: duration=10 rows=2 SHOW FULL COLUMNS FROM `profile_category`
+2018-12-02 13:01:49 Debug: duration=0 rows=1 SHOW INDEXES FROM `profile_category`
+2018-12-02 13:01:49 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'profile_category' AND rc.TABLE_NAME = 'profile_category'
+2018-12-02 13:01:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'profile_category'
+2018-12-02 13:01:49 Debug: duration=10 rows=4 SHOW FULL COLUMNS FROM `services_config`
+2018-12-02 13:01:49 Debug: duration=1 rows=1 SHOW INDEXES FROM `services_config`
+2018-12-02 13:01:49 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_config' AND rc.TABLE_NAME = 'services_config'
+2018-12-02 13:01:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_config'
+2018-12-02 13:01:49 Debug: duration=8 rows=6 SHOW FULL COLUMNS FROM `services_log`
+2018-12-02 13:01:49 Debug: duration=0 rows=3 SHOW INDEXES FROM `services_log`
+2018-12-02 13:01:49 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_log' AND rc.TABLE_NAME = 'services_log'
+2018-12-02 13:01:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_log'
+2018-12-02 13:01:49 Debug: duration=11 rows=7 SHOW FULL COLUMNS FROM `user_profile`
+2018-12-02 13:01:49 Debug: duration=0 rows=4 SHOW INDEXES FROM `user_profile`
+2018-12-02 13:01:49 Debug: duration=1 rows=3 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user_profile' AND rc.TABLE_NAME = 'user_profile'
+2018-12-02 13:01:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user_profile'
+2018-12-02 13:01:53 Debug: duration=14 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 13:01:53 Debug: duration=0 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 13:01:53 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 13:01:53 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 13:02:10 Debug: duration=1 rows=0 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 13:02:10 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 19:40:37 Debug: duration=33 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 19:40:37 Debug: duration=1 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 19:40:37 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 19:40:37 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 19:40:58 Debug: duration=0 rows=0 BEGIN
+2018-12-02 19:40:58 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM user User WHERE User.login = 'helder' LIMIT 1
+2018-12-02 19:40:58 Debug: duration=21 rows=1 INSERT INTO user (login, password, Name, created_timestamp, active) VALUES ('helder', 'helder', 'Helder', '2018-12-02 19:40:00', 1)
+2018-12-02 19:40:58 Debug: duration=0 rows=0 COMMIT
+2018-12-02 19:41:01 Debug: duration=1 rows=1 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 19:41:01 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 19:42:12 Debug: duration=1 rows=1 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 19:42:12 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 19:45:19 Debug: duration=18 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 19:45:19 Debug: duration=0 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 19:45:19 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 19:45:19 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 19:45:19 Debug: duration=1 rows=1 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 19:45:19 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 19:46:36 Debug: duration=2 rows=1 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 19:46:37 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 19:47:29 Debug: duration=1 rows=5 SHOW TABLES FROM `bunny`
+2018-12-02 19:47:29 Debug: duration=14 rows=7 SHOW FULL COLUMNS FROM `user_profile`
+2018-12-02 19:47:29 Debug: duration=0 rows=4 SHOW INDEXES FROM `user_profile`
+2018-12-02 19:47:29 Debug: duration=1 rows=3 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user_profile' AND rc.TABLE_NAME = 'user_profile'
+2018-12-02 19:47:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user_profile'
+2018-12-02 19:47:29 Debug: duration=11 rows=2 SHOW FULL COLUMNS FROM `profile_category`
+2018-12-02 19:47:29 Debug: duration=0 rows=1 SHOW INDEXES FROM `profile_category`
+2018-12-02 19:47:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'profile_category' AND rc.TABLE_NAME = 'profile_category'
+2018-12-02 19:47:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'profile_category'
+2018-12-02 19:47:29 Debug: duration=12 rows=4 SHOW FULL COLUMNS FROM `services_config`
+2018-12-02 19:47:29 Debug: duration=0 rows=1 SHOW INDEXES FROM `services_config`
+2018-12-02 19:47:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_config' AND rc.TABLE_NAME = 'services_config'
+2018-12-02 19:47:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_config'
+2018-12-02 19:47:29 Debug: duration=11 rows=6 SHOW FULL COLUMNS FROM `services_log`
+2018-12-02 19:47:29 Debug: duration=0 rows=3 SHOW INDEXES FROM `services_log`
+2018-12-02 19:47:29 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'services_log' AND rc.TABLE_NAME = 'services_log'
+2018-12-02 19:47:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'services_log'
+2018-12-02 19:47:29 Debug: duration=7 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 19:47:29 Debug: duration=0 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 19:47:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 19:47:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 19:47:30 Debug: duration=23 rows=7 SHOW FULL COLUMNS FROM `user_profile`
+2018-12-02 19:47:30 Debug: duration=0 rows=4 SHOW INDEXES FROM `user_profile`
+2018-12-02 19:47:30 Debug: duration=1 rows=3 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user_profile' AND rc.TABLE_NAME = 'user_profile'
+2018-12-02 19:47:30 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user_profile'
+2018-12-02 20:00:24 Debug: duration=20 rows=7 SHOW FULL COLUMNS FROM `user_profile`
+2018-12-02 20:00:24 Debug: duration=0 rows=4 SHOW INDEXES FROM `user_profile`
+2018-12-02 20:00:24 Debug: duration=1 rows=3 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user_profile' AND rc.TABLE_NAME = 'user_profile'
+2018-12-02 20:00:24 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user_profile'
+2018-12-02 20:00:24 Debug: duration=0 rows=0 SELECT UserProfile.id AS `UserProfile__id`, UserProfile.user_iduser AS `UserProfile__user_iduser`, UserProfile.category_idcategory AS `UserProfile__category_idcategory`, UserProfile.text AS `UserProfile__text`, UserProfile.source_idsource AS `UserProfile__source_idsource`, UserProfile.timestamp AS `UserProfile__timestamp`, UserProfile.active AS `UserProfile__active` FROM user_profile UserProfile LIMIT 20 OFFSET 0
+2018-12-02 20:00:24 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user_profile UserProfile
+2018-12-02 21:29:13 Debug: duration=18 rows=6 SHOW FULL COLUMNS FROM `user`
+2018-12-02 21:29:13 Debug: duration=0 rows=1 SHOW INDEXES FROM `user`
+2018-12-02 21:29:13 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user' AND rc.TABLE_NAME = 'user'
+2018-12-02 21:29:13 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user'
+2018-12-02 21:29:13 Debug: duration=0 rows=1 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 21:29:13 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 21:30:03 Debug: duration=1 rows=1 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 21:30:03 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 21:30:15 Debug: duration=1 rows=1 SELECT User.id AS `User__id`, User.login AS `User__login`, User.password AS `User__password`, User.Name AS `User__Name`, User.created_timestamp AS `User__created_timestamp`, User.active AS `User__active` FROM user User LIMIT 20 OFFSET 0
+2018-12-02 21:30:15 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user User
+2018-12-02 21:31:55 Debug: duration=17 rows=7 SHOW FULL COLUMNS FROM `user_profile`
+2018-12-02 21:31:55 Debug: duration=0 rows=4 SHOW INDEXES FROM `user_profile`
+2018-12-02 21:31:55 Debug: duration=2 rows=3 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'bunny' AND kcu.TABLE_NAME = 'user_profile' AND rc.TABLE_NAME = 'user_profile'
+2018-12-02 21:31:55 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'user_profile'
+2018-12-02 21:31:55 Debug: duration=0 rows=0 SELECT UserProfile.id AS `UserProfile__id`, UserProfile.user_iduser AS `UserProfile__user_iduser`, UserProfile.category_idcategory AS `UserProfile__category_idcategory`, UserProfile.text AS `UserProfile__text`, UserProfile.source_idsource AS `UserProfile__source_idsource`, UserProfile.timestamp AS `UserProfile__timestamp`, UserProfile.active AS `UserProfile__active` FROM user_profile UserProfile LIMIT 20 OFFSET 0
+2018-12-02 21:31:55 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM user_profile UserProfile
